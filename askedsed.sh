@@ -16,7 +16,7 @@ askedsed ()
             echo "$f": &&
             echo &&
             echo '~~~~~~~~ before' &&
-            echo "$(cat -n -- "$f" | sed -n -- "\\${p}pg" - | grep --color=always -- "${regex}" -)" &&
+            echo "$(cat -n -- "$f" | sed -n -- "\\${p}p" - | grep --color=always -- "${regex}" -)" &&
             echo '~~~~~~~~' &&
             echo &&
             echo '~~~~~~~~ after' &&
